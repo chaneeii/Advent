@@ -27,7 +27,6 @@ struct SnapCarousel<Content: View, T: Identifiable>: View {
         self._index = index
         self.content = content
         
-        
     }
     
     // Offset...

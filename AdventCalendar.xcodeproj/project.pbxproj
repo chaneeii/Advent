@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3206C1684A295FA36C1F2630 /* Pods_AdventCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A64938B70ACC07DAE54CE /* Pods_AdventCalendar.framework */; };
 		A7178E12281BB2A000E7F60E /* AdventCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E11281BB2A000E7F60E /* AdventCalendarApp.swift */; };
 		A7178E14281BB2A100E7F60E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E13281BB2A000E7F60E /* ContentView.swift */; };
 		A7178E16281BB2A100E7F60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7178E15281BB2A100E7F60E /* Assets.xcassets */; };
@@ -18,6 +19,18 @@
 		A7178E2E281BB5F400E7F60E /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E2D281BB5F400E7F60E /* Gift.swift */; };
 		A7178E33281D3F0400E7F60E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E32281D3F0400E7F60E /* Date.swift */; };
 		A7178E35281D4EFC00E7F60E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E34281D4EFC00E7F60E /* CardView.swift */; };
+		A7178E39281E7F3B00E7F60E /* GaussianCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E38281E7F3B00E7F60E /* GaussianCircle.swift */; };
+		A7178E3F281E8C1500E7F60E /* MessageSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E3E281E8C1500E7F60E /* MessageSheet.swift */; };
+		A7178E46281E9D9900E7F60E /* FirePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E45281E9D9900E7F60E /* FirePlace.swift */; };
+		A7178E4A281EA77F00E7F60E /* MessageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E49281EA77F00E7F60E /* MessageModal.swift */; };
+		A78931D32820083100FE78F7 /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931D22820083100FE78F7 /* DB_Manager.swift */; };
+		A78931D528200A5500FE78F7 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931D428200A5500FE78F7 /* PostCard.swift */; };
+		A78931DA2820413700FE78F7 /* giftData.json in Resources */ = {isa = PBXBuildFile; fileRef = A78931D92820413700FE78F7 /* giftData.json */; };
+		A78931DC2820414900FE78F7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931DB2820414900FE78F7 /* ModelData.swift */; };
+		A78931DF282167FF00FE78F7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A78931DE282167FF00FE78F7 /* Lottie */; };
+		A78931E128226AD700FE78F7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931E028226AD700FE78F7 /* LottieView.swift */; };
+		A78931E328227FE800FE78F7 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931E228227FE800FE78F7 /* BlurView.swift */; };
+		A78931E528227FFC00FE78F7 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931E428227FFC00FE78F7 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +46,20 @@
 		A7178E2D281BB5F400E7F60E /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		A7178E32281D3F0400E7F60E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A7178E34281D4EFC00E7F60E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A7178E38281E7F3B00E7F60E /* GaussianCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianCircle.swift; sourceTree = "<group>"; };
+		A7178E3E281E8C1500E7F60E /* MessageSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSheet.swift; sourceTree = "<group>"; };
+		A7178E45281E9D9900E7F60E /* FirePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirePlace.swift; sourceTree = "<group>"; };
+		A7178E49281EA77F00E7F60E /* MessageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModal.swift; sourceTree = "<group>"; };
+		A78931D22820083100FE78F7 /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
+		A78931D428200A5500FE78F7 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		A78931D92820413700FE78F7 /* giftData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = giftData.json; sourceTree = "<group>"; };
+		A78931DB2820414900FE78F7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A78931E028226AD700FE78F7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		A78931E228227FE800FE78F7 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		A78931E428227FFC00FE78F7 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		B270BA0D8C0C79A7B64AFB5D /* Pods-AdventCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventCalendar.debug.xcconfig"; path = "Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		B57A64938B70ACC07DAE54CE /* Pods_AdventCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20FA0EBCCFAAC1DF903560B /* Pods-AdventCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventCalendar.release.xcconfig"; path = "Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3206C1684A295FA36C1F2630 /* Pods_AdventCalendar.framework in Frameworks */,
+				A78931DF282167FF00FE78F7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52FE7F384AE14A70576A5FE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B270BA0D8C0C79A7B64AFB5D /* Pods-AdventCalendar.debug.xcconfig */,
+				E20FA0EBCCFAAC1DF903560B /* Pods-AdventCalendar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A7178E05281BB2A000E7F60E = {
 			isa = PBXGroup;
 			children = (
 				A7178E10281BB2A000E7F60E /* AdventCalendar */,
 				A7178E0F281BB2A000E7F60E /* Products */,
+				52FE7F384AE14A70576A5FE5 /* Pods */,
+				CB8F014E91FB0438362EFF9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +105,7 @@
 		A7178E10281BB2A000E7F60E /* AdventCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				A78931D828203FBC00FE78F7 /* Resources */,
 				A7178E1F281BB2BA00E7F60E /* Helper */,
 				A7178E21281BB2C800E7F60E /* Model */,
 				A7178E20281BB2C200E7F60E /* View */,
@@ -89,6 +130,7 @@
 			children = (
 				A7178E31281D3EF900E7F60E /* Util */,
 				A7178E22281BB2D700E7F60E /* Extension */,
+				A78931D22820083100FE78F7 /* DB_Manager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -96,9 +138,11 @@
 		A7178E20281BB2C200E7F60E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A7178E27281BB32800E7F60E /* SnapCarousel.swift */,
+				A7178E3A281E861300E7F60E /* Component */,
 				A7178E29281BB33800E7F60E /* Home.swift */,
-				A7178E34281D4EFC00E7F60E /* CardView.swift */,
+				A7178E3E281E8C1500E7F60E /* MessageSheet.swift */,
+				A7178E49281EA77F00E7F60E /* MessageModal.swift */,
+				A7178E45281E9D9900E7F60E /* FirePlace.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,7 +150,9 @@
 		A7178E21281BB2C800E7F60E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A78931DB2820414900FE78F7 /* ModelData.swift */,
 				A7178E2D281BB5F400E7F60E /* Gift.swift */,
+				A78931D428200A5500FE78F7 /* PostCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +174,35 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		A7178E3A281E861300E7F60E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A7178E38281E7F3B00E7F60E /* GaussianCircle.swift */,
+				A7178E27281BB32800E7F60E /* SnapCarousel.swift */,
+				A7178E34281D4EFC00E7F60E /* CardView.swift */,
+				A78931E028226AD700FE78F7 /* LottieView.swift */,
+				A78931E228227FE800FE78F7 /* BlurView.swift */,
+				A78931E428227FFC00FE78F7 /* ShareSheet.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		A78931D828203FBC00FE78F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A78931D92820413700FE78F7 /* giftData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB8F014E91FB0438362EFF9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B57A64938B70ACC07DAE54CE /* Pods_AdventCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,15 +210,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7178E1C281BB2A100E7F60E /* Build configuration list for PBXNativeTarget "AdventCalendar" */;
 			buildPhases = (
+				06F1ACBB6B1ED7749A5D3511 /* [CP] Check Pods Manifest.lock */,
 				A7178E0A281BB2A000E7F60E /* Sources */,
 				A7178E0B281BB2A000E7F60E /* Frameworks */,
 				A7178E0C281BB2A000E7F60E /* Resources */,
+				FAE6D3AA59F4BA987B9F68C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AdventCalendar;
+			packageProductDependencies = (
+				A78931DE282167FF00FE78F7 /* Lottie */,
+			);
 			productName = AdventCalendar;
 			productReference = A7178E0E281BB2A000E7F60E /* AdventCalendar.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +252,9 @@
 				Base,
 			);
 			mainGroup = A7178E05281BB2A000E7F60E;
+			packageReferences = (
+				A78931DD282167FF00FE78F7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A7178E0F281BB2A000E7F60E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,11 +270,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7178E19281BB2A100E7F60E /* Preview Assets.xcassets in Resources */,
+				A78931DA2820413700FE78F7 /* giftData.json in Resources */,
 				A7178E16281BB2A100E7F60E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F1ACBB6B1ED7749A5D3511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdventCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE6D3AA59F4BA987B9F68C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7178E0A281BB2A000E7F60E /* Sources */ = {
@@ -199,13 +325,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7178E2C281BB3B600E7F60E /* ViewExtension.swift in Sources */,
+				A78931E128226AD700FE78F7 /* LottieView.swift in Sources */,
 				A7178E35281D4EFC00E7F60E /* CardView.swift in Sources */,
 				A7178E24281BB30800E7F60E /* ColorExtension.swift in Sources */,
+				A7178E46281E9D9900E7F60E /* FirePlace.swift in Sources */,
+				A78931E328227FE800FE78F7 /* BlurView.swift in Sources */,
+				A78931D528200A5500FE78F7 /* PostCard.swift in Sources */,
 				A7178E2E281BB5F400E7F60E /* Gift.swift in Sources */,
 				A7178E14281BB2A100E7F60E /* ContentView.swift in Sources */,
+				A7178E4A281EA77F00E7F60E /* MessageModal.swift in Sources */,
 				A7178E2A281BB33800E7F60E /* Home.swift in Sources */,
 				A7178E12281BB2A000E7F60E /* AdventCalendarApp.swift in Sources */,
+				A78931DC2820414900FE78F7 /* ModelData.swift in Sources */,
 				A7178E33281D3F0400E7F60E /* Date.swift in Sources */,
+				A7178E39281E7F3B00E7F60E /* GaussianCircle.swift in Sources */,
+				A78931D32820083100FE78F7 /* DB_Manager.swift in Sources */,
+				A78931E528227FFC00FE78F7 /* ShareSheet.swift in Sources */,
+				A7178E3F281E8C1500E7F60E /* MessageSheet.swift in Sources */,
 				A7178E28281BB32800E7F60E /* SnapCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +465,7 @@
 		};
 		A7178E1D281BB2A100E7F60E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B270BA0D8C0C79A7B64AFB5D /* Pods-AdventCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +475,7 @@
 				DEVELOPMENT_TEAM = 562Z37RH3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to Save !!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,6 +496,7 @@
 		};
 		A7178E1E281BB2A100E7F60E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20FA0EBCCFAAC1DF903560B /* Pods-AdventCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +506,7 @@
 				DEVELOPMENT_TEAM = 562Z37RH3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to Save !!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A78931DD282167FF00FE78F7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A78931DE282167FF00FE78F7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A78931DD282167FF00FE78F7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7178E06281BB2A000E7F60E /* Project object */;
 }
