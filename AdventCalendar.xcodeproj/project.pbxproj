@@ -23,6 +23,8 @@
 		A7178E3F281E8C1500E7F60E /* MessageSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E3E281E8C1500E7F60E /* MessageSheet.swift */; };
 		A7178E46281E9D9900E7F60E /* FirePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E45281E9D9900E7F60E /* FirePlace.swift */; };
 		A7178E4A281EA77F00E7F60E /* MessageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7178E49281EA77F00E7F60E /* MessageModal.swift */; };
+		A7610AB9293655880030A79D /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7610AB8293655880030A79D /* ActivityItem.swift */; };
+		A7610ABB2936559B0030A79D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7610ABA2936559B0030A79D /* ActivityView.swift */; };
 		A78931D32820083100FE78F7 /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931D22820083100FE78F7 /* DB_Manager.swift */; };
 		A78931D528200A5500FE78F7 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78931D428200A5500FE78F7 /* PostCard.swift */; };
 		A78931DA2820413700FE78F7 /* giftData.json in Resources */ = {isa = PBXBuildFile; fileRef = A78931D92820413700FE78F7 /* giftData.json */; };
@@ -50,6 +52,9 @@
 		A7178E3E281E8C1500E7F60E /* MessageSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSheet.swift; sourceTree = "<group>"; };
 		A7178E45281E9D9900E7F60E /* FirePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirePlace.swift; sourceTree = "<group>"; };
 		A7178E49281EA77F00E7F60E /* MessageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModal.swift; sourceTree = "<group>"; };
+		A7610AB8293655880030A79D /* ActivityItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		A7610ABA2936559B0030A79D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		A7610ABC293655E10030A79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A78931D22820083100FE78F7 /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
 		A78931D428200A5500FE78F7 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
 		A78931D92820413700FE78F7 /* giftData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = giftData.json; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		A7178E05281BB2A000E7F60E = {
 			isa = PBXGroup;
 			children = (
+				A7610ABC293655E10030A79D /* Info.plist */,
 				A7178E10281BB2A000E7F60E /* AdventCalendar */,
 				A7178E0F281BB2A000E7F60E /* Products */,
 				52FE7F384AE14A70576A5FE5 /* Pods */,
@@ -177,6 +183,7 @@
 		A7178E3A281E861300E7F60E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				A7610AB72936557B0030A79D /* ActivitySheet */,
 				A7178E38281E7F3B00E7F60E /* GaussianCircle.swift */,
 				A7178E27281BB32800E7F60E /* SnapCarousel.swift */,
 				A7178E34281D4EFC00E7F60E /* CardView.swift */,
@@ -185,6 +192,15 @@
 				A78931E428227FFC00FE78F7 /* ShareSheet.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		A7610AB72936557B0030A79D /* ActivitySheet */ = {
+			isa = PBXGroup;
+			children = (
+				A7610AB8293655880030A79D /* ActivityItem.swift */,
+				A7610ABA2936559B0030A79D /* ActivityView.swift */,
+			);
+			path = ActivitySheet;
 			sourceTree = "<group>";
 		};
 		A78931D828203FBC00FE78F7 /* Resources */ = {
@@ -325,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7178E2C281BB3B600E7F60E /* ViewExtension.swift in Sources */,
+				A7610AB9293655880030A79D /* ActivityItem.swift in Sources */,
 				A78931E128226AD700FE78F7 /* LottieView.swift in Sources */,
 				A7178E35281D4EFC00E7F60E /* CardView.swift in Sources */,
 				A7178E24281BB30800E7F60E /* ColorExtension.swift in Sources */,
@@ -334,6 +351,7 @@
 				A7178E2E281BB5F400E7F60E /* Gift.swift in Sources */,
 				A7178E14281BB2A100E7F60E /* ContentView.swift in Sources */,
 				A7178E4A281EA77F00E7F60E /* MessageModal.swift in Sources */,
+				A7610ABB2936559B0030A79D /* ActivityView.swift in Sources */,
 				A7178E2A281BB33800E7F60E /* Home.swift in Sources */,
 				A7178E12281BB2A000E7F60E /* AdventCalendarApp.swift in Sources */,
 				A78931DC2820414900FE78F7 /* ModelData.swift in Sources */,
@@ -475,6 +493,7 @@
 				DEVELOPMENT_TEAM = 562Z37RH3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/chanheejeong/Study/AdventCalendar/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to Save !!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,6 +525,7 @@
 				DEVELOPMENT_TEAM = 562Z37RH3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/chanheejeong/Study/AdventCalendar/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to Save !!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

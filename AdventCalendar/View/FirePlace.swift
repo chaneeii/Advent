@@ -23,9 +23,8 @@ struct FirePlace: View {
     
     var body: some View {
         
-        ZStack{
-            
-            NavigationView{
+        NavigationView{
+            ZStack{
                 ZStack(alignment: .top){
                     
                     // BACKGOURND COLOR
@@ -38,7 +37,7 @@ struct FirePlace: View {
                             .font(.title2.bold())
                             .padding(.bottom, 10)
                         
-                        Text("12월 25일 0시 0분부터 선물을 공유할 수 있어요")
+                        Text("12월 25일 작성한 선물을 공유해보세요")
                             .foregroundColor(.white)
                             .font(.body.bold())
                         
@@ -88,20 +87,26 @@ struct FirePlace: View {
                 .navigationBarHidden(true)
                 .background(Color.adventNavy)
                 .ignoresSafeArea()
-
-            }// Navi
-            .onAppear( perform: {
-                self.postcardModels =
-                DB_Manager().getPostcards()
-            })
-            
-            // 공유하기용 MODAL
-            if isShow {
-                /** TODO : 나중에는 25일 0시 이후로 공유되도록 수정하기! **/
-                MessageModal(isSharedVersion: true, show: $isShow, name: $curName, content: $curContent, day: curDay)
+                
+                
+                
+                
+                // 공유하기용 MODAL
+                if isShow {
+                    /** TODO : 나중에는 25일 0시 이후로 공유되도록 수정하기! **/
+                    MessageModal(isSharedVersion: true, show: $isShow, name: $curName, content: $curContent, day: curDay)
+                }
+                
             }
-            
-        }
+
+        }// Navi
+        .onAppear( perform: {
+            self.postcardModels =
+            DB_Manager().getPostcards()
+        })
+        
+        
+
 
     }
 }

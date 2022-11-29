@@ -16,13 +16,13 @@ struct CardView: View {
     @EnvironmentObject var modelData: ModelData
     var gift: Gift
     
-    var xmas = "2022.05.25 00:00:00".stringToDate()  // 크리스마스 당일을 설정하는 변수
+    var xmas = "2022.12.25 00:00:00".stringToDate()  // TODO: 크리스마스 당일을 설정하는 변수
 
     var body: some View {
         
         VStack{
             // 1. 미래
-            if Date().dateCompare(fromDate: "2022.05.\(String(format: "%02d", currentIndex+1)) 00:00:00".stringToDate()!) == "Future"
+            if Date().dateCompare(fromDate: "2022.12.\(String(format: "%02d", currentIndex+1)) 00:00:00".stringToDate()!) == "Future"
             {
                 
                 ZStack{
@@ -35,7 +35,7 @@ struct CardView: View {
                                         
             }
             // 2. 크리스마스
-            else if xmas!.dateCompare(fromDate: "2022.05.\(String(format: "%02d", currentIndex+1)) 00:00:00".stringToDate()!) == "Same"{
+            else if xmas!.dateCompare(fromDate: "2022.12.\(String(format: "%02d", currentIndex+1)) 00:00:00".stringToDate()!) == "Same"{
         
                 xmasSide
                 

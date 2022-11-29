@@ -23,7 +23,8 @@ extension Date {
     /**
      # dateCompare
      - Parameters:
-        - fromDate: 비교 대상 Date
+        - fromDate: 비교 대상 D
+     ate
      - Note: 두 날짜간 비교해서 과거(Future)/현재(Same)/미래(Past) 반환
     */
     public func dateCompare(fromDate: Date) -> String {

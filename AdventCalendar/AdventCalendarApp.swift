@@ -12,6 +12,7 @@ struct AdventCalendarApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }

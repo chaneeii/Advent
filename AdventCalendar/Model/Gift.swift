@@ -12,8 +12,6 @@ import SwiftUI
 // 1 - 24 :
 // 25 : 크리스마스
 // >> 다음해로 넘어가면 리셋
-
-
 struct Gift: Identifiable, Hashable, Codable {
 //    var id = UUID().uuidString
     var id: String

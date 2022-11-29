@@ -17,8 +17,9 @@ struct MessageModal: View {
     @Binding var content: String
     @State var day: String = ""
     
-    @State var items: [Any] = []
-    @State var sheet = false
+    @State private var item: ActivityItem?
+//    @State var items: [Any] = []
+//    @State var sheet = false
     
     
     var postcardView: some View {
@@ -63,108 +64,86 @@ struct MessageModal: View {
     }
     
     var body: some View {
-        
-        ZStack{
+        VStack{
             
-            VStack{
+            Spacer()
+            
+            Text(isSharedVersion ? "12월 \(day)일의 선물" : "오늘의 카드가 선물창고에 저장되었습니다")
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .padding(.top, 50)
+                .padding(.bottom, 30)
+            
+            postcardView
+                .padding(.bottom, 30)
+            
+            
+            /** 공유하기용 **/
+            if isSharedVersion {
                 
-                Spacer()
-                
-                Text(isSharedVersion ? "12월 \(day)일의 선물" : "오늘의 카드가 선물창고에 저장되었습니다")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                    .padding(.top, 50)
-                    .padding(.bottom, 30)
-                
-                postcardView
-                    .padding(.bottom, 30)
-                
-                
-                /** 공유하기용 **/
-                if isSharedVersion {
+                HStack{
                     
-                    HStack{
-                        
-                        Button(action: {
-                            name = ""
-                            content = ""
-                            withAnimation{
-                                show.toggle()
-                            }
-                        }) {
-                            HStack{
-                                Text("닫기")
-                            }
-                            .padding()
-                            .frame(width: 140)
-                            .foregroundColor(.white)
-                            .background(Color.gray)
-                            .clipShape(Capsule())
-                        }
-                        
-                        Button(action: {
-                            
-                            // 공유하기 관련 내용
-                            
-                            let image = postcardView.snapshot()
-                            
-                            // 사진저장 UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                            print(image)
-                            
-                            items.removeAll()
-                            items.append(image)
-                            
-                            sheet.toggle()
-                            
-                        }) {
-                            HStack{
-                                Text("공유하기")
-                            }
-                            .padding()
-                            .frame(width: 140)
-                            .foregroundColor(.white)
-                            .background(Color.adventGreen)
-                            .clipShape(Capsule())
-                        }
-                        
-                    }
-                    .padding(.bottom, 20)
-                    
-                    
-                }
-                /** 작성확인용 **/
-                else{
-                    
-                    Button("닫기") {
+                    Button(action: {
                         name = ""
                         content = ""
                         withAnimation{
                             show.toggle()
                         }
+                    }) {
+                        HStack{
+                            Text("닫기")
+                        }
+                        .padding()
+                        .frame(width: 140)
+                        .foregroundColor(.white)
+                        .background(Color.gray)
+                        .clipShape(Capsule())
                     }
-                    .padding()
-                    .frame(width: 140)
-                    .foregroundColor(.white)
-                    .background(Color.adventGreen)
-                    .clipShape(Capsule())
-                    .padding(.bottom, 20)
+                    
+                    Button(action: {
+                        let image = postcardView.snapshot()
+                        item = ActivityItem(items: image)
+                    }) {
+                        HStack{
+                            Text("공유하기")
+                        }
+                        .padding()
+                        .frame(width: 140)
+                        .foregroundColor(.white)
+                        .background(Color.adventGreen)
+                        .clipShape(Capsule())
+                    }
+                    
                 }
+                .padding(.bottom, 20)
                 
-                Spacer()
                 
             }
+            /** 작성확인용 **/
+            else{
+                
+                Button("닫기") {
+                    name = ""
+                    content = ""
+                    withAnimation{
+                        show.toggle()
+                    }
+                }
+                .padding()
+                .frame(width: 140)
+                .foregroundColor(.white)
+                .background(Color.adventGreen)
+                .clipShape(Capsule())
+                .padding(.bottom, 20)
+            }
+            
+            Spacer()
             
         }
-        .frame(width: getRect().width, height: .infinity)
+        .frame(width: getRect().width)
         .ignoresSafeArea()
-        .background(Color.primary.opacity(0.8))
-        .sheet(isPresented: $sheet, content: {
-            
-            /** iOS 네이티브 공유하기 **/
-            /* TODO : 공유시트 최적화 */
-            ShareSheet(items: items)
-            
-        })
+        .background(Color.black.opacity(0.8))
+        .activitySheet($item)
         
         
     }

@@ -30,5 +30,9 @@ extension View {
         }
     }
     
+    func activitySheet(_ item: Binding<ActivityItem?>, permittedArrowDirections: UIPopoverArrowDirection = .any, onComplete: UIActivityViewController.CompletionWithItemsHandler? = nil) -> some View {
+        background(ActivityView(item: item, permittedArrowDirections: permittedArrowDirections, onComplete: onComplete))
+    }
+    
 }
 
